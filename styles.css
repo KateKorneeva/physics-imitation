@@ -1,0 +1,61 @@
+body {
+	color: #6B206A;
+	font-family: sans-serif;
+	background: #ccc;
+}
+
+.content {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.canvas-cont {
+	width: 600px;
+	height: 600px;
+	background-color: #fff;
+	display: inline-block;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.forms label {
+	display: block;
+	padding-bottom: 10px;
+	height: 30px;
+}
+
+.forms input {
+	border: none;
+	width: 50px;
+	float: right;
+	margin-left: 10px;
+	padding-left: 3px;
+}
+
+.forms button {
+	border: none;
+	height: 30px;
+	width: 50px;
+	border-radius: 3px;
+	margin-top: 10px;
+	font-weight: bold;
+	background-color: #6B206A;
+	color: #FFEA66;
+	float: right;
+}
+
+.forms {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+
+.box, .ball, .grav {
+	padding-left: 40px;
+	max-width: 120px;
+}
+
+.box, .ball {
+	display: inline-block;
+	vertical-align: top;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Engine</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="content">
+		<div class="forms">
+
+			<div class="box">
+				<h3>Коробка</h3>
+				<!-- предустановленные параметры коробки можно поменять здесь -->
+				<label>x: <input type="text" class="x-box" value="100"></label>
+				<label>y: <input type="text" class="y-box" value="20"></label>
+				<label>w: <input type="text" class="width" value="300"></label>
+				<label>h: <input type="text" class="height" value="300"></label>
+				<button class="addBox">add</button>
+			</div>
+
+			<div class="ball">
+				<h3>Мяч</h3>
+				<!-- предустановленные параметры мяча можно поменять здесь -->
+				<label>x: <input type="text" class="x-ball" value="500"></label>
+				<label>y: <input type="text" class="y-ball" value="0"></label>
+				<label>d: <input type="text" class="diam" value="30"></label>
+				<label>dx: <input type="text" class="dx" value="-10"></label>
+				<label>dy: <input type="text" class="dy" value="1"></label>
+				<label>elast %: <input type="text" class="elast"  value="10"> <!-- в процентах --></label>
+				<button class="addBall">add</button>
+			</div>
+
+			<div class="grav">
+				<h3>Ускорение</h3>
+				g:<input type="text" class="gravity" value="81">
+				<button class="submitGrav">ok</button>
+			</div>
+
+		</div> <!-- forms -->
+
+		<div class="canvas-cont">
+			<canvas id="canvas" width="600" height="600"></canvas>
+		</div>
+
+
+
+	</div> <!-- content -->
+	
+	<script src="app.js"></script>
+	<script src="engine.js"></script>
+	<script src="structure.js"></script>
+</body>
+</html>
